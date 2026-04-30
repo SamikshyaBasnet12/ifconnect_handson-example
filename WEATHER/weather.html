@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <main class="app">
+        <h1>Weather Finder</h1>
+        <p>Search city in real time</p>
+        
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="e.g. Kathmandu">
+            <button id="search-btn" type="button">Search</button>
+        </div>
+        
+        <p id="status" aria-live="polite"></p>
+        
+        <section id="weather-result" aria-live="polite">
+            <!-- Weather content injected via JS -->
+        </section>
+        
+        <script src="weather.js"></script>
+    </main>
+</body>
+</html>
